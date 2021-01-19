@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Boots</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="ad.size" content="width=300,height=250">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <script src="https://cdn.flashtalking.com/frameworks/js/gsap/1.20.1/TweenLite.min.js"></script>
+    <script src="https://cdn.flashtalking.com/frameworks/js/gsap/1.20.1/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdn.flashtalking.com/frameworks/js/gsap/1.20.1/easing/EasePack.min.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <div id="keyline" class="abs full"></div>
+        <div id="background" class="abs full"></div>
+        <div id="exitBtn" class="abs full"></div>
+
+        <img id="bg_img" class="abs full fullW hidden" src="images/bg_300x250_x1-5.jpg" alt="">
+        <img id="whiteBox" class="abs full hidden" src="images/whiteBox_300x250_x2.png" alt="">
+        
+        <div id="eyesWrap" class="abs full">
+            <img id="sprite" class="abs hidden fullW" src="images/sprite_300x250_x1.png" alt="">
+        </div>
+        <img id="eyes" class="abs hidden fullW" src="images/eyes_300x250_x2.png" alt="">
+
+        <div id="copy01" class="abs mainCopy hidden">THE ONLY THING<br>SHATTERED WILL<br>BE YOU</div>
+        <div id="copy02" class="abs mainCopy hidden">FREE YOUR EYES</div>
+        <div id="copy03" class="abs mainCopy hidden">THEY’LL LOVE IT</div>
+        <div id="copy04" class="abs mainCopy hidden">Book your free Boots or ACUVUE<sup>®</sup><br>contact lens trial today</div>
+
+        
+        <!-- main booots logo -->
+        <img id="logo_boots" class="abs full hidden" src="images/logo_boots_white_300x250_x2.png" alt="">
+        <img id="logo_boots_acuve" class="abs full hidden" src="images/logo_boots_acuve_300x250_x2.png" alt="">
+
+        
+         <!-- main cta btn -->
+        <div id="cta" class="abs hidden">Book Now</div>
+
+
+        
+
+
+        <!-- terms -->
+        <div id="btn_terms" class="abs hidden">Terms & Conditions ^</div>
+        <div id="terms_panel" class="abs full">
+            <div id="terms_copy" class="abs  fullW centerEle">Trial is subject to suitability and consists of up to five pairs of daily disposable lenses or a month’s supply of selected daily reusable lenses. Exclusions apply, Also excludes current Contact Lens Rewards Plan members. ACUVUE® is a trademark of Johnson & Johnson Medical Ltd.  PP2020AMB4835.</div>
+        </div>
+
+
+        <img id="btnReplay" src="images/btnReplay_x2.png" alt="">
+    </div>
+
+    <!-- FT Component Required -->
+    <script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+    <script type="text/javascript" src="js/main.js" ></script>
+    <script type="text/javascript">
+        
+        startAd();
+        // apply clickTag
+        
+        var clickThrough = myFT.$('#exitBtn');
+        myFT.applyClickTag(clickThrough);
+        
+    </script>
+</body>
+</html>
